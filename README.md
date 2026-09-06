@@ -15,7 +15,7 @@ I was given 1500 (x, y) points in xy_data.csv, sampled from this curve, and had 
 
 First I plotted the raw data to see what the curve actually looked like, it turned out to be a smooth curve with a slight wiggle running through it, which matched the sin(0.3t) term in the equation.
 
-Since I didn't know which value of t each point corresponded to, I couldn't fit t directly for every point. So instead, for any guess of theta, M, and X, I generated a dense version of the curve using thousands of t values, and then measured how far each real data point was from the closest point on that generated curve. Adding up all these distances gave me one single number,the loss — that tells me how good a particular guess is.
+Since I didn't know which value of t each point corresponded to, I couldn't fit t directly for every point. So instead, for any guess of theta, M, and X, I generated dense version of the curve using thousands of t values, and then measured how far each real data point was from the closest point on that generated curve. Adding up all these distances gave me one single number,the loss — that tells me how good a particular guess is.
 
 I used scipy's differential_evolution to search across the whole allowed range of theta, M, and X and find the combination that gave the lowest loss, since this avoids getting stuck in a wrong local answer. After that, I ran a local refinement step using Nelder-Mead to polish the result further.
 
