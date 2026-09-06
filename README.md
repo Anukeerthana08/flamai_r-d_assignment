@@ -42,6 +42,6 @@ My Desmos graph: https://www.desmos.com/calculator/w9qfrlgwsc
 
 ## Files in this repo
 
-- notebook.ipynb — all the code, with outputs already run and saved so you don't need to re-run anything
+- R&D_FlamAI.ipynb — all the code, with outputs already run and saved so you don't need to re-run anything
 - xy_data.csv — the data given in the assignment
 - Curve_fitting.png — screenshot confirming the fit matches visually
