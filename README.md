@@ -29,7 +29,7 @@ theta = 30°, M = 0.03, X = 55
 
 In the LaTeX format asked for:
 
-\left(t*\cos(0.523599)e^{0.03\left|t\right|}\cdot\sin(0.3t)\sin(0.523599)+55.0,42+t*\sin(0.523599)+e^{0.03\left|t\right|}\cdot\sin(0.3t)\cos(0.523599)\right)
+\left(t*\cos(0.523599)-e^{0.03\left|t\right|}\cdot\sin(0.3t)\sin(0.523599)+55.0,42+t*\sin(0.523599)+e^{0.03\left|t\right|}\cdot\sin(0.3t)\cos(0.523599)\right)
 
 ## Desmos verification
 
